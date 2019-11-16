@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "video-api-173513",
+  "private_key_id": "6fdeca3255d7fe23eb8478981e3af9e86036c0df",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvAIBADANBgkqhkiG9w0BAQEFAASCBKYwggSiAgEAAoIBAQDb6EhFybYiqn/S\nZNTKxym4W+Kx5GWwWvIjbXs0paxFJ07kFK3ve6kwAXBRElxGYRq+D5hGTPuAnzOE\nfxOOrjr4WJ29qOjM4JyjdXAgShxM+961Kmdk8m5r7/stpiEhS7j7G84YAN92vUEB\nnVnMt9clrQUrwBZ/tSD4upbLask4O+hy26nNIH/3gJMr6lO566NVW7rovp8kiuAM\nWkJeVEPsB4gMFmaf3JHNtKZdh80NCG8F735JXSwV/PO3eNi55ucebnHPMCthxJxK\nzEcD6qBkrfMmg1rf2YFHpfiMHvBsUmwDGbSTuODpHxTSE7mXv5Q9rmImF+elJ/Vz\nbP1uDH3rAgMBAAECggEAA8MyWim5cvFkDq3IxQ/QSZ+4Crjwk0P5fAKxBqisM5V/\nFsCF01QHaoaNYE25aqWmemI0H3iZhJnBg2UhnAgK6UBDsdpUe8DlQ5fl5OxWFjkb\nyXfuw4rkU10MeQgsU/BpCB7X98NeddHtU7SlM/v6c3usDxOryHnJLrt4JGw9m7eR\nwwjxjnNp2/kbz+CU4eZ6Ylb3wuOzHTmxGQdzMU6ZnROs0iLcnfdlimPJGRj5dkZ8\nwby7WY1IgpwLQOmeViYI4S3RBW/nELVrbqsP805PthxZupj0gGmY7QkLk5OwiG6+\nL0ashQSGWpBoxR4N29HDP5VgKiZnvixmeknw/aG9RQKBgQD0eg61RStOPX1/nAPN\n/9VNGcw36C+ddebywKa3Kzr97K2iLNCYHAiSZ3rhBTFASlkMzYreP/xiEhsAT7hz\nNIUl9rxvPjpmXcynnatxiybJLrSHRyx5BcbULNYDvzU1UkCGRifSM33DvDqC6EgR\nlx51mH+pClW2TpniHf2vScvzrQKBgQDmRcLvPFOkbkpECOeDZv4j0YvKRDEgStij\nOnQL+WhJG5KKkeF6CP8CTUnkYDK3CA5f6KXyUm24TNwdVQ9D5iUKmR5uxXE23o12\n3AA0Ys+GqMaF172NRY9SnpMWSbaK1TIEJOb444rp4J/GAbdvC8nnEJ43ieaElWAD\nsnz2brIq9wKBgEHDN4OhWJXSSpjyAb//CoST5PBA/9XuajJwiigJc/PsH4TZYz8X\ng2LGfTJccDQoC646+Bjyw1QqJKM/zpEG1q4wod2WsqTopG2OJxkC4msJqjwddCQV\n3rciXGtjms9+EadM5ddQTItDbcXa78/zg5kEbYquIgJJQHGnuZ7WTgt9AoGAJrBD\n3zQQjYjmO2YPl7k/K79yMCqi4l0Q5uPUSYq+5cGXLmbyLjHCvp1Ds/YhrzTQTXbm\nIr+MpbFsLhVzeiH5yT0OqufLbL+ZnwW5lxOe8G385NHpjAnK2cPAzLbXz52gSKf2\nkoyQc1kFHxx8uFCPvJ3DJ2uo6k+6kQR1EGZq0uMCgYBoEbm3SxFVn3X3JiP2Zxwm\nWo57Ksjs4S6G0zqaE1ZEBMLvNg4EJrz5hh3pdRhMiZsV2i4oDwYw9ICQF8uch6Xu\ny+Gb85A7fVMZR6zDQR5LJHY75PCO9el//HQpIBsQbdOBgFU0eVb++tXUOFC4iT4z\n8NITRY0V8r0SMttqRYVg8w==\n-----END PRIVATE KEY-----\n",
+  "client_email": "videoapi@video-api-173513.iam.gserviceaccount.com",
+  "client_id": "102740602180147844470",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://accounts.google.com/o/oauth2/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/videoapi%40video-api-173513.iam.gserviceaccount.com"
+}

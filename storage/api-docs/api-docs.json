@@ -1,0 +1,206 @@
+{
+    "swagger": "2.0",
+    "info": {
+        "title": "Video API",
+        "description": "API to manage local and Youtube videos.",
+        "version": "1.0.0"
+    },
+    "host": "projetotest.app",
+    "basePath": "/",
+    "schemes": [
+        "http"
+    ],
+    "paths": {
+        "/videos": {
+            "get": {
+                "summary": "List 10 videos in the database.",
+                "operationId": "getVideos",
+                "responses": {
+                    "200": {
+                        "description": "Videos Retrieved Successfully."
+                    },
+                    "500": {
+                        "description": "Internal Server Error."
+                    }
+                }
+            },
+            "post": {
+                "summary": "Post a new video from a youtube hash",
+                "operationId": "postVideo",
+                "parameters": [
+                    {
+                        "name": "Video Hash",
+                        "in": "body",
+                        "description": "Hash of a Youtube video to add.",
+                        "required": true,
+                        "schema": {
+                            "$ref": "#/definitions/Video"
+                        },
+                        "type": "string",
+                        "default": "{\"hash\":\"pwkeSXa3qvc\"}"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Video Successfully Added to Database."
+                    },
+                    "500": {
+                        "description": "Internal Server Error."
+                    }
+                }
+            }
+        },
+        "/videos/{videoId}": {
+            "get": {
+                "summary": "List information of a video with the specified id.",
+                "operationId": "getVideo",
+                "parameters": [
+                    {
+                        "name": "videoId",
+                        "in": "path",
+                        "description": "Id of a video in the database.",
+                        "required": true,
+                        "type": "integer",
+                        "default": 37
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Video Retrieved Successfully."
+                    },
+                    "404": {
+                        "description": "Video Not Found on Youtube."
+                    },
+                    "500": {
+                        "description": "Internal Server Error."
+                    }
+                }
+            },
+            "put": {
+                "summary": "Update the hash of an existing video by its id.",
+                "operationId": "putVideo",
+                "parameters": [
+                    {
+                        "name": "videoId",
+                        "in": "path",
+                        "description": "Id of a video in the database.",
+                        "required": true,
+                        "type": "integer",
+                        "default": 50
+                    },
+                    {
+                        "name": "Video Hash",
+                        "in": "body",
+                        "description": "Hash of a Youtube video to edit.",
+                        "required": true,
+                        "schema": {
+                            "$ref": "#/definitions/Video"
+                        },
+                        "type": "string",
+                        "default": "{ \"hash\" : \"B7zPiF149q8\" }"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Video Successfully Added to Database."
+                    },
+                    "404": {
+                        "description": "Video Not Found."
+                    },
+                    "422": {
+                        "description": "The Hash Field is Incorrect."
+                    },
+                    "500": {
+                        "description": "Internal Server Error."
+                    }
+                }
+            },
+            "delete": {
+                "summary": "Delete a video with a specified Id from the database.",
+                "operationId": "deleteVideo",
+                "parameters": [
+                    {
+                        "name": "videoId",
+                        "in": "path",
+                        "description": "Id of a video in the database.",
+                        "required": true,
+                        "type": "integer"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Video Successfully Retrieved From Youtube."
+                    },
+                    "404": {
+                        "description": "Video Not Found."
+                    },
+                    "500": {
+                        "description": "Internal Server Error."
+                    }
+                }
+            }
+        },
+        "/videos/youtube/{videoHash}": {
+            "get": {
+                "summary": "Get information of a video from the Youtube API",
+                "operationId": "getYoutubeInfo",
+                "parameters": [
+                    {
+                        "name": "videoHash",
+                        "in": "path",
+                        "description": "Video hash from a youtube video",
+                        "required": true,
+                        "type": "string",
+                        "default": "vr-jtDjTaIc"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Video Successfully Retrieved From Youtube."
+                    }
+                }
+            }
+        },
+        "/videos/search": {
+            "get": {
+                "summary": "Search for videos with different parameters",
+                "operationId": "getVideoQuery",
+                "parameters": [
+                    {
+                        "name": "text",
+                        "in": "query",
+                        "description": "Searches video titles and descriptions for these keywords.",
+                        "required": false,
+                        "type": "string",
+                        "default": "Spacemind"
+                    },
+                    {
+                        "name": "limit",
+                        "in": "query",
+                        "description": "Limits the number of videos to show.",
+                        "required": false,
+                        "type": "integer",
+                        "default": 5
+                    },
+                    {
+                        "name": "offset",
+                        "in": "query",
+                        "description": "Retrieves a number of videos starting from an offset value.",
+                        "required": false,
+                        "type": "integer",
+                        "default": 0
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Videos Successfully Retrieved."
+                    },
+                    "500": {
+                        "description": "Internal Server Error."
+                    }
+                }
+            }
+        }
+    },
+    "definitions": {}
+}
